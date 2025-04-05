@@ -1,26 +1,181 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Global Styles */
+
+body {
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+h1 {
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  font-weight: 900;
+  letter-spacing: 0.25px;
+}
+
+h2 {
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: "OpenSans", Helvetica, Arial;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: 0.75px;
+}
+
+.btns {
+  display: flex;
+}
+
+.buttonBlue {
+  width: 100%;
+  margin-top: 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2ca4f2;
+  border: 1px solid #2ca4f2;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  font-size: 18px;
+  font-weight: 900;
+  outline: none;
+  outline: 0;
+  padding: 8px 32px;
+  text-align: center;
+  transform: translateY(0);
+  user-select: none;
+  -webkit-user-select: none;
+  transition: 0.3s;
+}
+
+.buttonWhite {
+  width: 100%;
+  display: block;
+  margin: 24px 0px;
+  background-color: #ffffff;
+  border: 1px solid #2ca4f2;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #2ca4f2;
+  cursor: pointer;
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  font-size: 12px;
+  font-weight: 900;
+  outline: none;
+  outline: 0;
+  padding: 8px 32px;
+  text-align: center;
+  transform: translateY(0);
+  user-select: none;
+  -webkit-user-select: none;
+  transition: 0.3s;
+}
+
+.buttonGreen {
+  width: 100%;
+  display: block;
+  margin: 24px 0px;
+  background-color: #ffffff;
+  border: 1px solid #10B981;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #10B981;
+  cursor: pointer;
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  font-size: 12px;
+  font-weight: 900;
+  outline: none;
+  outline: 0;
+  padding: 8px 32px;
+  text-align: center;
+  transform: translateY(0);
+  user-select: none;
+  -webkit-user-select: none;
+  transition: 0.3s;
+}
+
+.buttonBlue:hover {
+  box-shadow: 0px 8px 16px rgba(145, 149, 157, 0.3);
+  transform: translateY(-2px);
+  /* transition: all 3s ease-in-out; */
+}
+.buttonWhite:hover {
+  box-shadow: 0px 8px 16px rgba(145, 149, 157, 0.3);
+  transform: translateY(-2px);
+  /* transition: all 3s ease-in-out; */
+}
+.buttonGreen:hover {
+  box-shadow: 0px 8px 16px rgba(145, 149, 157, 0.3);
+  transform: translateY(-2px);
+  /* transition: all 3s ease-in-out; */
+}
+
+@media (max-width: 768px) {
+  .btnsContact {
+    margin: 0 8%;
+  }
+  .btns {
+    display: block;
+  }
+  .buttonBlue {
+    width: 100%;
+    margin: 16px 0 0;
+    padding: 8px 0px;
+    font-size: 16px;
+  }
+  .buttonWhite {
+    width: 100%;
+    margin: 8px 0px 0;
+    padding: 8px 0px;
+    font-size: 12px;
+  }
+  .buttonGreen {
+    width: 100%;
+    margin: 8px 0px 0;
+    padding: 8px 0px;
+    font-size: 12px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+@media (min-width: 1280px) {
+  .buttonBlue {
+    width: 288px;
+    margin: 32px 0 0;
+    padding: 8px 0px;
+    font-size: 20px;
+  }
+  .buttonWhite {
+    width: 288px;
+    margin: 16px 0px 0;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .buttonGreen {
+    width: 288px;
+    margin: 16px 0px 0;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
 }
