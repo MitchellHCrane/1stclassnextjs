@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-
 import { useState } from "react";
 import {
   Dialog,
@@ -20,13 +19,18 @@ import {
   PhoneIcon,
   EnvelopeIcon,
 } from "@heroicons/react/20/solid";
+import Banner from "./Banner";
 
 const callsToAction = [
   { name: "Call", href: "tel:3859991871", icon: PhoneIcon },
   { name: "Email", href: "mailto:loans@troywarner.com", icon: EnvelopeIcon },
 ];
 const tools = [
-  { name: "Mortgage Calculator", href: "#", target: "_self" },
+  {
+    name: "Mortgage Calculator",
+    href: "/mortgage-calculator",
+    target: "_self",
+  },
   {
     name: "Down Payment Assistance",
     href: "https://dpa.1stclasshomemortgage.com/",
@@ -65,9 +69,15 @@ export default function Header() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+          <a
+            href="/testimonials"
+            className="flex text-white items-center gap-x-1 cursor-pointer"
+          >
+            Testimonials
+          </a>
           <Popover className="relative">
             <PopoverButton className="flex text-white items-center gap-x-1 cursor-pointer">
-              Contact Us
+              Contact
               <ChevronDownIcon
                 aria-hidden="true"
                 className="size-5 flex-none text-white"
@@ -87,7 +97,7 @@ export default function Header() {
                   >
                     <item.icon
                       aria-hidden="true"
-                      className="size-5 flex-none text-[#00a651]"
+                      className="size-5 flex-none text-[#004e82]"
                     />
                     {item.name}
                   </a>
@@ -174,17 +184,24 @@ export default function Header() {
                     ))}
                   </DisclosurePanel>
                 </Disclosure>
-                <a
-                  href="#"
+                <Link
+                  href="/testimonials"
+                  className="-mx-3 block rounded-lg px-3 py-2 hover:bg-gray-50"
+                >
+                  Testimonials
+                </Link>
+                <Link
+                  href="/privacy-policy"
                   className="-mx-3 block rounded-lg px-3 py-2 hover:bg-gray-50"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         </DialogPanel>
       </Dialog>
+      <Banner />
     </header>
   );
 }

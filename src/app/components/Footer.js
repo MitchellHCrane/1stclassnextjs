@@ -7,6 +7,7 @@ const navigation = {
     { name: "Fax: (801)-303-7083" },
   ],
   links: [
+    { name: "Testimonials", href: "/testimonials" },
     { name: "Mortgage Calculator", href: "/mortgage-calculator" },
     {
       name: "Down Payment Assistance",
@@ -79,66 +80,56 @@ export default function Footer() {
   return (
     <footer className="bg-white">
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 lg:px-8 lg:pt-24">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+        <div className="grid grid-cols-4 gap-8 xl:col-span-2">
           <Image
             alt="Company name"
             src="/images/fchmLogoColor.png"
             width={32}
             height={32}
           />
-          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm/6 font-semibold text-gray-900">
-                  Contact
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.contact.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm/6 text-gray-600 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
-                <h3 className="text-sm/6 font-semibold text-gray-900">Links</h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.links.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm/6 text-gray-600 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm/6 font-semibold text-gray-900">
-                  Address
-                </h3>
-                <div className="mt-6 space-y-4">
-                  <p className="text-sm/6 text-gray-600 hover:text-gray-900">
-                    <a
-                      href="https://goo.gl/maps/o97dcDxGxFcAcRheA"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      10808 River Front Parkway, Suite #3035,{<br />} South
-                      Jordan, UT 84095
-                    </a>
-                  </p>
-                </div>
-              </div>
+          <div>
+            <h3 className="text-sm/6 font-semibold text-gray-900">Contact</h3>
+            <ul role="list" className="mt-6 space-y-4">
+              {navigation.contact.map((item) => (
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    className="text-sm/6 text-gray-600 hover:text-gray-900"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="mt-10 md:mt-0">
+            <h3 className="text-sm/6 font-semibold text-gray-900">Links</h3>
+            <ul role="list" className="mt-6 space-y-4">
+              {navigation.links.map((item) => (
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    className="text-sm/6 text-gray-600 hover:text-gray-900"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-sm/6 font-semibold text-gray-900">Address</h3>
+            <div className="mt-6 space-y-4">
+              <p className="text-sm/6 text-gray-600 hover:text-gray-900">
+                <a
+                  href="https://goo.gl/maps/o97dcDxGxFcAcRheA"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  10808 River Front Parkway, Suite #3035,{<br />} South Jordan,
+                  UT 84095
+                </a>
+              </p>
             </div>
           </div>
         </div>

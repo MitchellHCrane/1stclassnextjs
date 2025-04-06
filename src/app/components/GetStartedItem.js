@@ -1,32 +1,35 @@
-import Image from "next/image";
+import {
+  ArrowsPointingInIcon,
+  CreditCardIcon,
+} from "@heroicons/react/24/outline";
+import {
+  DocumentTextIcon,
+  AcademicCapIcon,
+  ArrowUpTrayIcon,
+  HandRaisedIcon,
+  EyeIcon,
+} from "@heroicons/react/24/solid";
 
-function GetStartedItem({ title, description, iconName }) {
-  const iconMap = {
-    applicationIcon: "/images/get-started-icons/application.svg",
-    loanEducationIcon: "/images/get-started-icons/loan-education.svg",
-    uploadDocumentIcon: "/images/get-started-icons/upload-documents.svg",
-    peaceHand: "/images/get-started-icons/peaceHand.svg",
-    reviewIcon: "/images/get-started-icons/review.svg",
-  };
+const iconMap = {
+  applicationIcon: DocumentTextIcon,
+  loanEducationIcon: AcademicCapIcon,
+  uploadDocumentIcon: ArrowUpTrayIcon,
+  peaceHand: HandRaisedIcon,
+  reviewIcon: EyeIcon,
+  consolidationIcon: ArrowsPointingInIcon,
+  creditCardIcon: CreditCardIcon,
+};
 
-  const IconSrc = iconMap[iconName] || "/get-started-icons/application.svg";
+function GetStartedItem({ iconName, title, description }) {
+  const Icon = iconMap[iconName] || DocumentTextIcon;
 
   return (
-    <div className="relative py-16 px-8 text-xl text-center bg-white rounded-lg shadow-lg">
-      <div className="absolute top-[-32px] left-4 h-16 w-16 bg-[#f5bb54] flex items-center justify-center rounded-lg">
-        <Image
-          src={IconSrc}
-          alt="get started item icon"
-          width={24}
-          height={24}
-        />
+    <div className="relative p-16 pt-20 text-center rounded-lg bg-white mx-[8%] mt-8 shadow-[0_8px_16px_rgba(145,149,157,0.3)]">
+      <div className="absolute top-[-32px] left-4 h-16 w-16 bg-[#f5bb54] flex items-center justify-center rounded-md">
+        <Icon className="h-8 w-8 text-white" />
       </div>
-      <h3 className="text-xl font-bold text-left text-[#004e82] mt-4">
-        {title}
-      </h3>
-      <p className="text-base text-left text-[#91959d] mt-2 leading-relaxed">
-        {description}
-      </p>
+      <h3 className="text-left text-xl font-semibold mb-2">{title}</h3>
+      <p className="text-left text-base">{description}</p>
     </div>
   );
 }

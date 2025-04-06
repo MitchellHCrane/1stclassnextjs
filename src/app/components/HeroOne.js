@@ -2,8 +2,8 @@ export default function HeroOne() {
   return (
     <div className="w-full">
       <div
-        style={{ height: "calc(100vh - 6rem" }}
-        className="bg-cover bg-center bg-no-repeat bg-[url('/images/homeBackground.png')]"
+        style={{ height: "calc(100vh - 6rem)" }}
+        className="bg-center bg-no-repeat bg-[url('/images/homeBackground.png')] bg-cover w-full h-full px-0 m-0"
       >
         <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
