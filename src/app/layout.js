@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Header from "./components/Navbar";
+import Banner from "./components/Banner";
 
 import "./globals.css";
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />
+        <Banner />
         {children}
         <Footer />
       </body>

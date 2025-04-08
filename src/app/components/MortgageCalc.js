@@ -73,7 +73,7 @@ function MortgageCalc() {
   };
 
   return (
-    <div className="pb-16 mx-auto max-w-xl mt-16">
+    <div className="pb-16 px-8 mx-auto max-w-xl mt-10">
       <div className="space-y-6 mb-10">
         <div className="flex justify-between items-center">
           <label className="text-lg font-semibold">Price of Home</label>
@@ -89,8 +89,8 @@ function MortgageCalc() {
 
         <div className="flex justify-between items-center">
           <label className="text-lg font-semibold">Down Payment</label>
-          <div className="flex gap-4 w-1/2">
-            <div className="w-1/2 relative">
+          <div className="flex flex-col md:flex-row gap-4 w-1/2">
+            <div className="md:w-1/2 relative">
               <div className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500 text-lg">
                 %
               </div>
@@ -105,7 +105,7 @@ function MortgageCalc() {
               />
             </div>
 
-            <div className="w-1/2 relative">
+            <div className="md:w-1/2 relative">
               <div className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500 text-lg">
                 $
               </div>

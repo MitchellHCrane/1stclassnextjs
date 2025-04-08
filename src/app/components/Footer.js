@@ -13,6 +13,10 @@ const navigation = {
       name: "Down Payment Assistance",
       href: "https://dpa.1stclasshomemortgage.com/",
     },
+    {
+      name: "Careers",
+      href: "/careers",
+    },
     { name: "Privacy Policy", href: "/privacy-policy" },
   ],
   social: [
@@ -80,7 +84,7 @@ export default function Footer() {
   return (
     <footer className="bg-white">
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 lg:px-8 lg:pt-24">
-        <div className="grid grid-cols-4 gap-8 xl:col-span-2">
+        <div className="grid md:grid-cols-4 gap-8 xl:col-span-2">
           <Image
             alt="Company name"
             src="/images/fchmLogoColor.png"
@@ -102,7 +106,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <div className="mt-10 md:mt-0">
+          <div>
             <h3 className="text-sm/6 font-semibold text-gray-900">Links</h3>
             <ul role="list" className="mt-6 space-y-4">
               {navigation.links.map((item) => (
@@ -140,28 +144,6 @@ export default function Footer() {
               Regulated by the Colorado Division of Real Estate NMLS #1843
             </p>
           </div>
-          {/* <form className="mt-6 sm:flex sm:max-w-md lg:mt-0">
-            <label htmlFor="email-address" className="sr-only">
-              Email address
-            </label>
-            <input
-              id="email-address"
-              name="email-address"
-              type="email"
-              required
-              placeholder="Enter your email"
-              autoComplete="email"
-              className="w-full min-w-0 rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:w-56 sm:text-sm/6"
-            />
-            <div className="mt-4 sm:mt-0 sm:ml-4 sm:shrink-0">
-              <button
-                type="submit"
-                className="flex w-full items-center justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Subscribe
-              </button>
-            </div>
-          </form> */}
         </div>
         <div className="mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex gap-x-6 md:order-2">

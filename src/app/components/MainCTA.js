@@ -10,12 +10,12 @@ export default function MainCTA() {
             Call now to speak with a mortgage expert.
           </p>
         </div>
-        <div className="flex items-center">
+        <div className="flex mt-6 lg:mt-0 items-center">
           <a
             href="tel:3859991871"
             className="rounded-md bg-[#004e82] px-4 py-3 text-lg font-semibold text-white hover:text-[#2ca4f2] hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
-            385-999-1871
+            Call 385-999-1871
           </a>
         </div>
       </div>
