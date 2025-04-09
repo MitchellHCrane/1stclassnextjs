@@ -54,7 +54,7 @@ export default function CareersPage() {
 
           <div className="bg-gray-100 rounded-2xl p-6 md:p-10 shadow-md">
             <h2 className="text-2xl font-semibold text-[#2ca4f2]">
-              Grow Your Network. Grow Your Business.
+              Build Your Network. Grow Your Business.
             </h2>
             <p className="mt-2">
               Join an engaged, high-performing community of loan originators and
