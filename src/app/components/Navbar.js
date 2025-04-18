@@ -31,6 +31,11 @@ const resources = [
     target: "_self",
   },
   {
+    name: "Loan Application",
+    href: "https://firstclasshomemortgage.my1003app.com/102983/register",
+    target: "_blank",
+  },
+  {
     name: "Down Payment Assistance",
     href: "https://dpa.1stclasshomemortgage.com/",
     target: "_blank",

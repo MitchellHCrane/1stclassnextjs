@@ -10,6 +10,10 @@ const navigation = {
     { name: "Testimonials", href: "/testimonials" },
     { name: "Mortgage Calculator", href: "/mortgage-calculator" },
     {
+      name: "Loan Application",
+      href: "https://firstclasshomemortgage.my1003app.com/102983/register",
+    },
+    {
       name: "Down Payment Assistance",
       href: "https://dpa.1stclasshomemortgage.com/",
     },
