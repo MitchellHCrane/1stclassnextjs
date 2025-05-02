@@ -149,7 +149,7 @@ export default function Header() {
           </a>
           {/* CTA Button  */}
           <a
-            href="#"
+            href="tel:3859991871"
             className="rounded-md bg-[#f5bb54] hover:bg-[#f5bb54]/85 px-2 py-1 font-semibold text-white shadow-sm focus-visible:outline-offset-2 focus-visible:outline-[#f5bb54]"
           >
             Call 385-999-1871
@@ -221,7 +221,7 @@ export default function Header() {
                   Privacy Policy
                 </Link>
                 <a
-                  href="#"
+                  href="tel:3859991871"
                   className="rounded-md bg-[#f5bb54] hover:bg-[#f5bb54]/85 px-2 py-1 font-semibold text-white shadow-sm focus-visible:outline-offset-2 focus-visible:outline-[#f5bb54]"
                 >
                   Call 385-999-1871

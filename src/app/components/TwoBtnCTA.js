@@ -1,4 +1,4 @@
-export default function MainCTA({
+export default function TwoBtnCTA({
   title,
   subtitle,
   primaryButton,

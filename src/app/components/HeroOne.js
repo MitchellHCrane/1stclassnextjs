@@ -16,7 +16,7 @@ export default function HeroOne() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="tel:3859991871"
                 className="rounded-md bg-[#f5bb54] hover:bg-[#f5bb54]/85 px-3.5 py-2.5 font-semibold text-white shadow-sm focus-visible:outline-offset-2 focus-visible:outline-[#f5bb54]"
               >
                 Call 385-999-1871
