@@ -22,10 +22,11 @@ export default function HeroOne() {
                 Call 385-999-1871
               </a>
               <a
-                href="#getStarted"
+                href="https://firstclasshomemortgage.my1003app.com/102983/register"
+                target="_blank"
                 className="font-semibold text-[#004e82] hover:text-[#004e82]/80"
               >
-                Learn more <span aria-hidden="true">→</span>
+                Get Pre-Approved <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>

@@ -26,6 +26,11 @@ const callsToAction = [
 ];
 const resources = [
   {
+    name: "Get Pre-Approved",
+    href: "https://firstclasshomemortgage.my1003app.com/102983/register",
+    target: "_blank",
+  },
+  {
     name: "Mortgage Calculator",
     href: "/mortgage-calculator",
     target: "_self",
