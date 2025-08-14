@@ -1,4 +1,5 @@
 import MainCTA from "../components/MainCTA";
+import Head from "next/head";
 
 const testimonials = [
   {
@@ -85,48 +86,101 @@ const testimonials = [
 
 export default function Example() {
   return (
-    <div className="bg-white pt-16">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-16">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-xl font-semibold text-[#2ca4f2]">Testimonials</h2>
-          <p className="mt-2 text-4xl font-semibold text-[#004e82] sm:text-4xl">
-            We&apos;ve had the privilege of helping incredible individuals and
-            families achieve their homeownership dreams.
-          </p>
-        </div>
-        <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
-          <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={`${testimonial.name}-${index}`}
-                className="pt-8 sm:inline-block sm:w-full sm:px-4"
-              >
-                <figure className="rounded-2xl bg-gray-50 p-8 text-sm/6">
-                  <blockquote className="text-gray-900">
-                    <p>{`“${testimonial.body}”`}</p>
-                  </blockquote>
-                  <figcaption className="mt-6 flex items-center gap-x-4">
-                    {/* <Image
+    <>
+      <Head>
+        <title>Testimonials | Hear From Our Happy Clients</title>
+        <meta
+          name="description"
+          content="Read testimonials from our satisfied clients who achieved their homeownership dreams with First Class Home Mortgage."
+        />
+        <meta
+          name="keywords"
+          content="client testimonials, mortgage reviews, happy clients, homeownership success stories, First Class Home Mortgage"
+        />
+        <meta name="author" content="First Class Home Mortgage" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          property="og:title"
+          content="Testimonials | Hear From Our Happy Clients"
+        />
+        <meta
+          property="og:description"
+          content="Read testimonials from our satisfied clients who achieved their homeownership dreams with First Class Home Mortgage."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://1stclasshomemortgage.com/testimonials"
+        />
+        <meta
+          property="og:image"
+          content="https://1stclasshomemortgage.com/testimonials-og-image.jpg"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "Testimonials | Hear From Our Happy Clients",
+              description:
+                "Read testimonials from our satisfied clients who achieved their homeownership dreams with First Class Home Mortgage.",
+              url: "https://1stclasshomemortgage.com/testimonials",
+              author: {
+                "@type": "Organization",
+                name: "First Class Home Mortgage",
+              },
+              image:
+                "https://1stclasshomemortgage.com/testimonials-og-image.jpg",
+            }),
+          }}
+        />
+      </Head>
+      <div className="bg-white pt-16">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-16">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-xl font-semibold text-[#2ca4f2]">
+              Testimonials
+            </h2>
+            <p className="mt-2 text-4xl font-semibold text-[#004e82] sm:text-4xl">
+              We&apos;ve had the privilege of helping incredible individuals and
+              families achieve their homeownership dreams.
+            </p>
+          </div>
+          <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
+            <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
+              {testimonials.map((testimonial, index) => (
+                <div
+                  key={`${testimonial.name}-${index}`}
+                  className="pt-8 sm:inline-block sm:w-full sm:px-4"
+                >
+                  <figure className="rounded-2xl bg-gray-50 p-8 text-sm/6">
+                    <blockquote className="text-gray-900">
+                      <p>{`“${testimonial.body}”`}</p>
+                    </blockquote>
+                    <figcaption className="mt-6 flex items-center gap-x-4">
+                      {/* <Image
                       alt=""
                       src={testimonial.author.imageUrl}
                       width={24}
                       height={24}
                       className="size-10 rounded-full bg-gray-50"
                     /> */}
-                    <div>
-                      <div className="font-semibold text-[#2ca4f2]">
-                        {testimonial.author.name}
+                      <div>
+                        <div className="font-semibold text-[#2ca4f2]">
+                          {testimonial.author.name}
+                        </div>
+                        {/* <div className="text-gray-600">{`@${testimonial.author.handle}`}</div> */}
                       </div>
-                      {/* <div className="text-gray-600">{`@${testimonial.author.handle}`}</div> */}
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-            ))}
+                    </figcaption>
+                  </figure>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
+        <MainCTA />
       </div>
-      <MainCTA />
-    </div>
+    </>
   );
 }
