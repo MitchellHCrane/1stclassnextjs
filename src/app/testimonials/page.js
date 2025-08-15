@@ -91,7 +91,7 @@ export default function Example() {
         <title>Testimonials | Hear From Our Happy Clients</title>
         <meta
           name="description"
-          content="Read testimonials from our satisfied clients who achieved their homeownership dreams with First Class Home Mortgage."
+          content="Read testimonials from our satisfied clients who achieved their home ownership dreams with First Class Home Mortgage."
         />
         <meta
           name="keywords"
@@ -105,7 +105,7 @@ export default function Example() {
         />
         <meta
           property="og:description"
-          content="Read testimonials from our satisfied clients who achieved their homeownership dreams with First Class Home Mortgage."
+          content="Read testimonials from our satisfied clients who achieved their home ownership dreams with First Class Home Mortgage."
         />
         <meta property="og:type" content="website" />
         <meta
@@ -114,7 +114,7 @@ export default function Example() {
         />
         <meta
           property="og:image"
-          content="https://1stclasshomemortgage.com/testimonials-og-image.jpg"
+          content="https://1stclasshomemortgage.com/images/fchm-testimonials.jpg"
         />
         <script
           type="application/ld+json"
@@ -131,7 +131,7 @@ export default function Example() {
                 name: "First Class Home Mortgage",
               },
               image:
-                "https://1stclasshomemortgage.com/testimonials-og-image.jpg",
+                "https://1stclasshomemortgage.com/images/fchm-testimonials.jpg",
             }),
           }}
         />

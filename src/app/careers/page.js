@@ -34,7 +34,7 @@ export default function CareersPage() {
         />
         <meta
           property="og:image"
-          content="https://1stclasshomemortgage.com/careers-og-image.jpg"
+          content="https://1stclasshomemortgage.com/images/fchm-carrers.jpg"
         />
         <script
           type="application/ld+json"
@@ -50,7 +50,7 @@ export default function CareersPage() {
                 "@type": "Organization",
                 name: "First Class Home Mortgage",
               },
-              image: "https://1stclasshomemortgage.com/careers-og-image.jpg",
+              image: "https://1stclasshomemortgage.com/images/fchm-carrers.jpg",
               potentialAction: {
                 "@type": "SearchAction",
                 target:
