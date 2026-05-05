@@ -130,12 +130,13 @@ export default function Footer() {
             <div className="mt-6 space-y-4">
               <p className="text-sm/6 text-gray-600 hover:text-gray-900">
                 <a
-                  href="https://goo.gl/maps/o97dcDxGxFcAcRheA"
+                  href={process.env.NEXT_PUBLIC_MAPS_URL || "https://goo.gl/maps/o97dcDxGxFcAcRheA"}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  10808 River Front Parkway, Suite #3035,{<br />} South Jordan,
-                  UT 84095
+                  {process.env.NEXT_PUBLIC_ADDRESS_LINE1 || "10808 River Front Parkway, Suite #3035"}
+                  {<br />}
+                  {process.env.NEXT_PUBLIC_ADDRESS_LINE2 || "South Jordan, UT 84095"}
                 </a>
               </p>
             </div>
