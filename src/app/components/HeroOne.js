@@ -1,4 +1,11 @@
 export default function HeroOne() {
+  const formatPhoneNumber = (phone) => {
+    return phone.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+  };
+
+  const phoneNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER || '3859991871';
+  const formattedPhone = formatPhoneNumber(phoneNumber);
+
   return (
     <div className="w-full">
       <div
@@ -16,10 +23,10 @@ export default function HeroOne() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="tel:3859991871"
+                href={`tel:${phoneNumber}`}
                 className="rounded-md bg-[#f5bb54] hover:bg-[#f5bb54]/85 px-3.5 py-2.5 font-semibold text-white shadow-sm focus-visible:outline-offset-2 focus-visible:outline-[#f5bb54]"
               >
-                Call 385-999-1871
+                Call {formattedPhone}
               </a>
               <a
                 href="https://firstclasshomemortgage.my1003app.com/102983/register"

@@ -3,6 +3,13 @@ import TwoBtnCTA from "../components/TwoBtnCTA";
 import Head from "next/head";
 
 export default function CareersPage() {
+  const formatPhoneNumber = (phone) => {
+    return phone.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+  };
+
+  const phoneNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER || '3859991871';
+  const formattedPhone = formatPhoneNumber(phoneNumber);
+
   return (
     <>
       <Head>
@@ -125,8 +132,8 @@ export default function CareersPage() {
         </div>
         <TwoBtnCTA
           title="We are Hiring Experienced Loan Officers"
-          subtitle="Join our South Jordan office and thrive with a winning team, or make a referral and get rewarded – it’s that easy!"
-          primaryButton={{ label: "Call 385-999-1871", href: "tel:3859991871" }}
+          subtitle="Join our South Jordan office and thrive with a winning team, or make a referral and get rewarded – it's that easy!"
+          primaryButton={{ label: `Call ${formattedPhone}`, href: `tel:${phoneNumber}` }}
           secondaryButton={{
             label: "Make a Referral",
             href: "https://referral.1stclasshomemortgage.com/",

@@ -1,8 +1,15 @@
 import Image from "next/image";
 
+const formatPhoneNumber = (phone) => {
+  return phone.replace(/(\d{3})(\d{3})(\d{4})/, '($1)-$2-$3');
+};
+
+const phoneNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER || '3859991871';
+const formattedPhone = formatPhoneNumber(phoneNumber);
+
 const navigation = {
   contact: [
-    { name: "(385)-999-1871", href: "tel:385-999-1871" },
+    { name: formattedPhone, href: `tel:${phoneNumber}` },
     { name: "loans@troywarner.com", href: "mailto:loans@troywarner.com" },
     { name: "Fax: (801)-303-7083" },
   ],
@@ -146,7 +153,7 @@ export default function Footer() {
           <div>
             <h3 className="text-sm/6 font-semibold text-gray-900">License:</h3>
             <p className="mt-2 text-sm/6 text-gray-600">
-              Regulated by the Colorado Division of Real Estate NMLS #1843
+              Regulated by the Colorado Division of Real Estate NMLS #{process.env.NEXT_PUBLIC_NMLS_NUMBER || '1843'}
             </p>
           </div>
         </div>

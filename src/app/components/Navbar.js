@@ -21,7 +21,7 @@ import {
 } from "@heroicons/react/20/solid";
 
 const callsToAction = [
-  { name: "Call", href: "tel:3859991871", icon: PhoneIcon },
+  { name: "Call", href: `tel:${process.env.NEXT_PUBLIC_PHONE_NUMBER}`, icon: PhoneIcon },
   { name: "Email", href: "mailto:loans@troywarner.com", icon: EnvelopeIcon },
 ];
 const resources = [
@@ -54,6 +54,13 @@ const resources = [
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const formatPhoneNumber = (phone) => {
+    return phone.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+  };
+
+  const phoneNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER || '3859991871';
+  const formattedPhone = formatPhoneNumber(phoneNumber);
 
   return (
     <header className="bg-[#004e82] sticky top-0 shadow-sm z-50">
@@ -149,10 +156,10 @@ export default function Header() {
           </a>
           {/* CTA Button  */}
           <a
-            href="tel:3859991871"
+            href={`tel:${phoneNumber}`}
             className="rounded-md bg-[#f5bb54] hover:bg-[#f5bb54]/85 px-2 py-1 font-semibold text-white shadow-sm focus-visible:outline-offset-2 focus-visible:outline-[#f5bb54]"
           >
-            Call 385-999-1871
+            Call {formattedPhone}
           </a>
         </PopoverGroup>
       </nav>
@@ -221,10 +228,10 @@ export default function Header() {
                   Privacy Policy
                 </Link>
                 <a
-                  href="tel:3859991871"
+                  href={`tel:${phoneNumber}`}
                   className="rounded-md bg-[#f5bb54] hover:bg-[#f5bb54]/85 px-2 py-1 font-semibold text-white shadow-sm focus-visible:outline-offset-2 focus-visible:outline-[#f5bb54]"
                 >
-                  Call 385-999-1871
+                  Call {formattedPhone}
                 </a>
               </div>
             </div>
