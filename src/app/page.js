@@ -1,6 +1,7 @@
 import GetStarted from "./components/GetStarted";
 import HeroOne from "./components/HeroOne";
 import MainCTA from "./components/MainCTA";
+import Reviews from "./components/Reviews";
 import Head from "next/head";
 
 export default function Home() {
@@ -77,6 +78,7 @@ export default function Home() {
       <div className="flex flex-col mx-auto bg-white">
         <HeroOne />
         <GetStarted />
+        <Reviews />
         <MainCTA />
       </div>
     </>

@@ -96,12 +96,17 @@ export default function Footer() {
     <footer className="bg-white">
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 lg:px-8 lg:pt-24">
         <div className="grid md:grid-cols-4 gap-8 xl:col-span-2">
-          <Image
-            alt="Company name"
-            src="/images/fchmLogoColor.png"
-            width={32}
-            height={32}
-          />
+          <div className="flex flex-col gap-2">
+            <Image
+              alt="Company name"
+              src="/images/fchmLogoColor.png"
+              width={32}
+              height={32}
+            />
+            <p className="text-sm/6 font-semibold text-gray-900">
+              NMLS #{process.env.NEXT_PUBLIC_NMLS_NUMBER || "1843"}
+            </p>
+          </div>
           <div>
             <h3 className="text-sm/6 font-semibold text-gray-900">Contact</h3>
             <ul role="list" className="mt-6 space-y-4">

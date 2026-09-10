@@ -8,6 +8,12 @@ import {
   ArrowUpTrayIcon,
   HandRaisedIcon,
   EyeIcon,
+  HomeIcon,
+  BanknotesIcon,
+  ArrowsRightLeftIcon,
+  BriefcaseIcon,
+  BuildingOffice2Icon,
+  ArrowPathIcon,
 } from "@heroicons/react/24/solid";
 
 const iconMap = {
@@ -18,6 +24,12 @@ const iconMap = {
   reviewIcon: EyeIcon,
   consolidationIcon: ArrowsPointingInIcon,
   creditCardIcon: CreditCardIcon,
+  homeIcon: HomeIcon,
+  downPaymentIcon: BanknotesIcon,
+  buyBeforeSellIcon: ArrowsRightLeftIcon,
+  selfEmployedIcon: BriefcaseIcon,
+  investmentIcon: BuildingOffice2Icon,
+  refinanceIcon: ArrowPathIcon,
 };
 
 function GetStartedItem({ iconName, title, description }) {

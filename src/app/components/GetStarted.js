@@ -14,23 +14,41 @@ function GetStarted() {
         </p>
       </div>
 
-      <div className="max-w-[1024px] mx-auto mt-[-96px] grid grid-cols-1 justify-center gap-4 lg:grid-cols-3">
+      <div className="max-w-[1024px] mx-auto mt-[-96px] grid grid-cols-1 justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <GetStartedItem
-          title="Home Purchases"
-          description="Looking to buy your first home, First Class Home Mortgage has a variety of loans to help you find the perfect solution."
-          iconName="applicationIcon"
+          title="First-Time Homebuyers"
+          description="New to buying? We walk you through every step and match you with first-time buyer programs and low-down-payment loans."
+          iconName="homeIcon"
         />
 
         <GetStartedItem
-          title="Credit Problems?"
-          description="We have mortgage loans to help you walk through all the options available to you."
-          iconName="creditCardIcon"
+          title="Down Payment Assistance"
+          description="Short on the down payment? We offer grant and assistance programs that can cover some or all of it."
+          iconName="downPaymentIcon"
         />
 
         <GetStartedItem
-          title="Debt Consolidation"
-          description="Tired of paying minimum payments on high-interest-rate credit cards? First Class Home Mortgage can help."
-          iconName="consolidationIcon"
+          title="Buy Before You Sell"
+          description="Found your next home but haven't sold your current one? We have loan options that let you buy first and sell later."
+          iconName="buyBeforeSellIcon"
+        />
+
+        <GetStartedItem
+          title="Self-Employed Borrowers"
+          description="1099, business owner, or gig income? We have bank-statement and alternative-documentation loans built for you."
+          iconName="selfEmployedIcon"
+        />
+
+        <GetStartedItem
+          title="Investment Properties"
+          description="Growing your portfolio? Financing for rentals, second homes, and multi-unit investment properties."
+          iconName="investmentIcon"
+        />
+
+        <GetStartedItem
+          title="Refinance & Debt Consolidation"
+          description="Lower your rate, tap your equity, or roll high-interest debt into one lower monthly payment."
+          iconName="refinanceIcon"
         />
       </div>
     </div>
