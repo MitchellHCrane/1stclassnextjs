@@ -96,17 +96,12 @@ export default function Footer() {
     <footer className="bg-white">
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 lg:px-8 lg:pt-24">
         <div className="grid md:grid-cols-4 gap-8 xl:col-span-2">
-          <div className="flex flex-col gap-2">
-            <Image
-              alt="Company name"
-              src="/images/fchmLogoColor.png"
-              width={32}
-              height={32}
-            />
-            <p className="text-sm/6 font-semibold text-gray-900">
-              NMLS #{process.env.NEXT_PUBLIC_NMLS_NUMBER || "1843"}
-            </p>
-          </div>
+          <Image
+            alt="Company name"
+            src="/images/fchmLogoColor.png"
+            width={32}
+            height={32}
+          />
           <div>
             <h3 className="text-sm/6 font-semibold text-gray-900">Contact</h3>
             <ul role="list" className="mt-6 space-y-4">
@@ -158,7 +153,10 @@ export default function Footer() {
           <div>
             <h3 className="text-sm/6 font-semibold text-gray-900">License:</h3>
             <p className="mt-2 text-sm/6 text-gray-600">
-              Regulated by the Colorado Division of Real Estate NMLS #{process.env.NEXT_PUBLIC_NMLS_NUMBER || '1843'}
+              Regulated by the Colorado Division of Real Estate NMLS #{process.env.NEXT_PUBLIC_BRANCH_NMLS_NUMBER || '2719095'}
+            </p>
+            <p className="mt-2 text-sm/6 text-gray-600">
+              Company NMLS #{process.env.NEXT_PUBLIC_NMLS_NUMBER || '1843'}
             </p>
           </div>
         </div>
