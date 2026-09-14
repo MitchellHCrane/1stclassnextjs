@@ -29,6 +29,7 @@ const navigation = {
       href: "/careers",
     },
     { name: "Privacy Policy", href: "/privacy-policy" },
+    { name: "Terms & Conditions", href: "/terms" },
   ],
   social: [
     {

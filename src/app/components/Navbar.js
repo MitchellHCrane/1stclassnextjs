@@ -227,6 +227,12 @@ export default function Header() {
                 >
                   Privacy Policy
                 </Link>
+                <Link
+                  href="/terms"
+                  className="-mx-3 block rounded-lg px-3 py-2 hover:bg-gray-50"
+                >
+                  Terms & Conditions
+                </Link>
                 <a
                   href={`tel:${phoneNumber}`}
                   className="rounded-md bg-[#f5bb54] hover:bg-[#f5bb54]/85 px-2 py-1 font-semibold text-white shadow-sm focus-visible:outline-offset-2 focus-visible:outline-[#f5bb54]"
