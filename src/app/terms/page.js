@@ -28,7 +28,9 @@ const Terms = () => {
       <p className="mb-4">
         Message and data rates may apply.
         <br />
-        Text STOP to cancel. Text HELP for help.
+        Reply STOP to cancel.
+        <br />
+        Reply HELP for help.
       </p>
 
       <h2 className="text-xl font-bold mb-2">4. Opt-In Requirement</h2>

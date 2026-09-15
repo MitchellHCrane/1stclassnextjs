@@ -559,6 +559,14 @@ const PrivacyPolicy = () => {
         12. SMS/Text Messaging Privacy
       </h2>
       <p className="mb-4">
+        First Class Home Mortgage collects mobile phone numbers and related
+        SMS opt-in/consent data when you provide express consent to receive
+        text messages from us. We use this information solely to send you the
+        text messages you have opted in to receive, such as mortgage updates,
+        market resources, events, and follow-up communications, and to
+        maintain a record of your consent and opt-out status.
+      </p>
+      <p className="mb-4">
         Mobile information, including phone numbers and SMS opt-in/consent
         data, will not be sold or shared with third parties or affiliates for
         marketing or promotional purposes. We do not sell your data.
@@ -566,7 +574,7 @@ const PrivacyPolicy = () => {
       <p className="mb-4">
         If you have opted in to receive text messages from First Class Home
         Mortgage, message and data rates may apply. You may opt out at any
-        time by texting STOP, or reply HELP for help. For full details on our
+        time by replying STOP, or reply HELP for help. For full details on our
         SMS program, including message frequency and opt-in requirements, see
         our{" "}
         <Link href={"/terms"} className="underline">
