@@ -31,6 +31,12 @@ const Terms = () => {
         Reply STOP to cancel.
         <br />
         Reply HELP for help.
+        <br />
+        Message frequency varies based on activity.
+        <br />
+        Phone numbers and SMS opt-in data collected by First Class Home
+        Mortgage will not be sold or shared with third parties or affiliates
+        for marketing or promotional purposes.
       </p>
 
       <h2 className="text-xl font-bold mb-2">4. Opt-In Requirement</h2>
