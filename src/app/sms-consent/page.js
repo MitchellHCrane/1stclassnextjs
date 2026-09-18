@@ -22,6 +22,18 @@ export default function SmsConsentPage() {
           Class Home Mortgage. You can opt out at any time by replying STOP.
         </p>
         <SmsConsentForm />
+        <p className="mt-6 text-sm text-gray-600 text-center">
+          By opting in, you agree to our{" "}
+          <Link href="/terms" className="underline">
+            Terms &amp; Conditions
+          </Link>{" "}
+          and{" "}
+          <Link href="/privacy-policy" className="underline">
+            Privacy Policy
+          </Link>
+          . Message and data rates may apply. Reply STOP to opt out at any
+          time.
+        </p>
       </div>
     </div>
   );
