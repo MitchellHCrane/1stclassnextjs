@@ -12,12 +12,14 @@ export default function SmsConsentForm() {
 
     const form = event.currentTarget;
     const formData = new FormData(form);
+    const payload = Object.fromEntries(formData.entries());
+    payload.consent = formData.get("consent") === "agreed";
 
     try {
-      const response = await fetch("/", {
+      const response = await fetch("/api/sms-consent", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
       });
 
       if (response.ok) {
@@ -41,12 +43,7 @@ export default function SmsConsentForm() {
   }
 
   return (
-    <form
-      name="sms-consent"
-      onSubmit={handleSubmit}
-      className="space-y-4 max-w-md"
-    >
-      <input type="hidden" name="form-name" value="sms-consent" />
+    <form onSubmit={handleSubmit} className="space-y-4 max-w-md">
       <p hidden>
         <label>
           Don&apos;t fill this out: <input name="bot-field" />
