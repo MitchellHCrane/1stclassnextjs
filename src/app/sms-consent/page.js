@@ -9,18 +9,20 @@ export const metadata = {
 
 export default function SmsConsentPage() {
   return (
-    <div className="bg-gray-100 p-6">
-      <Link href={"/"} className="underline">
-        Back
-      </Link>
-      <h1 className="text-3xl font-bold mb-4 mt-2">
-        Sign Up for Text Updates
-      </h1>
-      <p className="mb-6 max-w-md">
-        Enter your information below to opt in to text messages from First
-        Class Home Mortgage. You can opt out at any time by replying STOP.
-      </p>
-      <SmsConsentForm />
+    <div className="bg-gray-100 p-6 min-h-screen">
+      <div className="max-w-md mx-auto">
+        <Link href={"/"} className="underline">
+          Back
+        </Link>
+        <h1 className="text-3xl font-bold mb-4 mt-2 text-center">
+          Sign Up for Text Updates
+        </h1>
+        <p className="mb-6 text-center">
+          Enter your information below to opt in to text messages from First
+          Class Home Mortgage. You can opt out at any time by replying STOP.
+        </p>
+        <SmsConsentForm />
+      </div>
     </div>
   );
 }
