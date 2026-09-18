@@ -28,6 +28,7 @@ const navigation = {
       name: "Careers",
       href: "/careers",
     },
+    { name: "Text Updates Sign Up", href: "/sms-consent" },
     { name: "Privacy Policy", href: "/privacy-policy" },
     { name: "Terms & Conditions", href: "/terms" },
   ],
